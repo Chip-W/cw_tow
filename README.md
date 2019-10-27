@@ -1,31 +1,33 @@
-# cw_tow
+# asser-tow
 This is a basic tow script for fivem using chat commands.
 
-The script as is only works using a PJ Trailer by DeezNutties123 on GTA5-mods. Changeing the model on your server might break the script as it attaches the vehicle you want to tow to a specific bone on the trailer.
+The script as is only works using a flatbed. Changeing the flatbed model on your server might break the script as it attaches the vehicle you want to tow to a specific bone on the flatbed.
 
-Please note that if the last vehicle you've used is not the PJ Trailer, then you wont be able to load it, and theres no distance built into the script yet, so it wont know if you are loading a vehicle 100ft away or just 10ft away. Either make it yourself or wait for an update ;)
+Please note that if the last vehicle you've used is not the flatbed truck you want to tow something on, then you wont be able to tow, and theres no distance built into the script yet, so it wont know if you are towing a vehicle 100ft away or just 10ft away. Either make it yourself or wait for an update ;)
 
 ## Installation:
 Clone the project or download the master.
 
-Add cw_tow to resources folder.
+Add pv-tow to resources folder.
 
-Add “start cw_tow” to server.cfg
+Add “start pv-tow” to server.cfg
 
 ## Usage:
 
-Get in the PJ Trailer like you would any vehicle - (the script looks for your last driven vehicle, and it needs it to be the PJ Trailer)
+Drive a ‘flatbed’ - (the script looks for your last driven vehicle, and it needs it to be a flatbed)
 
-Go near a vehicle you want to tow and write /ftow (to load the front of the trailer), /btow (to load the back of the trailer), or /ctow (to load a single vehicle on the trailer) in the chat-
+Go near a vehicle you want to tow and write /tow in the chat-
 
 Drive around
 
-Type the command again to unload the vehicle.
+Exit flatbed and write /tow to detach vehicle again.
 
-## V1.0 - Initial commit
+## V1.1 - for ES
+pv-tow.zip - Did not show error if no vehicle was to tow. Now it does.
 
-## Support:
+## V1.2 - for FX
+pv-tow.zip
+Changelog: Removed all ES command stuff and used the stringsplit instead since mostly people working with ES would know how to convert it. Also change stringsplit to one working with FX which means that it should be working perfectly. Tested and working on FX
 
-If you can't figure out how to use this overly simple script, I can't help you.
-
-I will not help you create a resource for the PJ Trailer, nor will I supply one.  You are a server owner, you should already know how to do this very simple task.
+## V1.3 - Githubbed
+Project now gitted, all future versions and contributions goes here.
